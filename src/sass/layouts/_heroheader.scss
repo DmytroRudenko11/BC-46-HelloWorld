@@ -1,0 +1,7 @@
+.navigation__list {
+  display: none;
+
+  @include tablet {
+    display: flex;
+  }
+}
