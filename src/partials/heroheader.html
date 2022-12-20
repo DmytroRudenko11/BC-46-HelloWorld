@@ -1,7 +1,17 @@
 <section class="page-header">
     <div class="header-container">
         <nav class="navigation">
-            <a href="#" class="navigation__link"></a>
+            <a href="#" class="navigation__logo">
+                <picture>
+                    <source srcset="
+                     ../images/logo/logo-desk-min.png" media=" (min-width: 1200px)">
+                    <source srcset="
+                       ../images/logo/logo-tab-min.png" media=" (min-width: 768px)">
+                    <source srcset="
+                       ../images/logo/logo-mob-min.png" media=" (max-width: 767px)">
+                    <img src="../images/logo/logo-mob-min.png" alt="">
+                </picture>
+            </a>
             <ul class="navigation__list">
                 <li class="navigation__item">Home</li>
                 <li class="navigation__item">How it’s made?</li>
@@ -9,6 +19,55 @@
                 <li class="navigation__item">Contact</li>
             </ul>
         </nav>
-        <button class="modal-btn" type="button"></button>
+        <button class="modal-btn" type="button">Buy now</button>
+        <button class="menu-btn" type="button">
+            <svg class="menu_icon" width="32px" height="32px">
+                <use href="../images/SprayIceCream.svg#menu"></use>
+            </svg>
+        </button>
     </div>
+</section>
+<section class="hero-section">
+    <div class="container">
+        <h1>ice cream<br> made with<br> passion</h1>
+        <ul>
+            <li><a class="products-btn" href="#">Products</a></li>
+            <li><a class="products-btn" href="#">How it’s made?</a></li>
+        </ul>
+        <div class="lorem_wrap">
+            <picture>
+                <source srcset="
+                 ../images/ice-cream-plate/plate-desk.png 1x,
+                 ../images/ice-cream-plate/plate-desk-2x.png 2x
+                 " media=" (min-width: 1200px)">
+                <source srcset="
+                 ../images/ice-cream-plate/plate-tab.png 1x,
+                 ../images/ice-cream-plate/plate-tab-2x.png 2x
+                 " media=" (min-width: 1200px)">
+                <source srcset="
+                  ../images/ice-cream-plate/plate-desk.png 1x,
+                 ../images/ice-cream-plate/plate-desk-2x.png 2x
+                 " media=" (min-width: 1200px)">
+                <img src="../images/ice-cream-plate/plate-desk.png" alt="">
+            </picture>
+            <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                labore et</p>
+
+        </div>
+    </div>
+    <picture>
+        <source srcset="
+         ../images/ice-cream-1/ice-cream-1-desk.png 1x,
+         ../images/ice-cream-1/ice-cream-1-desk-2x.png 2x
+         " media=" (min-width: 1200px)">
+        <source srcset="
+         ../images/ice-cream-1/ice-cream-1-tab.png 1x,
+        ../images/ice-cream-1/ice-cream-1-tab-2x.png 2x
+         " media=" (min-width: 1200px)">
+        <source srcset="
+         ../images/ice-cream-1/ice-cream-1-mob.png 1x,
+         ../images/ice-cream-1/ice-cream-1-mob-2x.png 2x
+         " media=" (min-width: 1200px)">
+        <img src="../images/ice-cream-1/ice-cream-1-mob.png" alt="">
+    </picture>
 </section>
