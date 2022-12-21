@@ -1,0 +1,27 @@
+body {
+  color: $main-white;
+  background-color: $bcg-color;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+
+  @include mobile {
+    padding-right: 20px;
+    padding-left: 20px;
+    width: 480px;
+  }
+
+  @include tablet {
+    padding-right: 32px;
+    padding-left: 32px;
+    width: 768px;
+  }
+  @include desktop {
+    padding-right: 16px;
+    padding-left: 16px;
+    width: 1200px;
+  }
+}
