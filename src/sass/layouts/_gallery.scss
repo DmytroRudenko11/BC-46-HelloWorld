@@ -1,0 +1,52 @@
+.gallery {
+  background-image: url(../images/bcg/bcg-mob.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  @include retina {
+    background-image: url(../images/bcg/bcg-mob-2x.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  @include tablet {
+    background-image: url(../images/bcg/bcg-tab.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    @include retina {
+      background-image: url(../images/bcg/bcg-tab-2x.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+  }
+  @include desktop {
+    background-image: url(../images/bcg/bcg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    @include retina {
+      background-image: url(../images/bcg/bcg-2x.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+  }
+}
+
+.container__gallery {
+  position: relative;
+}
+
+// .gallerySwiper {
+//   position: absolute;
+
+//   z-index: 1;
+// }
+
+.gallery__photo {
+  display: block;
+  border-radius: 24px;
+  margin: 0 auto;
+}
