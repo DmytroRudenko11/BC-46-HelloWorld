@@ -26,7 +26,9 @@
     padding-left: 32px;
     padding-right: 32px;
     border-radius: 24px;
-    background-color: chartreuse;
+    border: solid 1px #E1E1E1;
+    background-color: #FCFCFC;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
 
 }
@@ -61,11 +63,17 @@
 .store__location {
     display: block;
     margin-bottom: 24px;
+    text-decoration: none;
     font-weight: 500;
     font-size: 12px;
     line-height: calc(22/12);
     letter-spacing: 0.04em;
     color: #D6936D;
+}
+
+.store__location:hover,
+.store__location:focus {
+    text-decoration: underline;
 }
 
 .store__time {
@@ -116,9 +124,14 @@
 }
 
 .store__link {
+    text-decoration: none;
     font-weight: 500;
     font-size: 12px;
     line-height: calc(19/12);
     color: #212121;
 
+}
+.store__link:hover,
+.store__link:focus {
+    text-decoration: underline;
 }
