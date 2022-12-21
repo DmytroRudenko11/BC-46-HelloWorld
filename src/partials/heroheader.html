@@ -1,15 +1,15 @@
-<section class="page-header">
-    <div class="header-container">
+<header class="page-header">
+    <div class="header-container container">
         <nav class="navigation">
             <a href="#" class="navigation__logo">
                 <picture>
                     <source srcset="
-                     ../images/logo/logo-desk-min.png" media=" (min-width: 1200px)">
+                     ./images/logo/logo-desk-min.png" media=" (min-width: 1200px)">
                     <source srcset="
-                       ../images/logo/logo-tab-min.png" media=" (min-width: 768px)">
+                       ./images/logo/logo-tab-min.png" media=" (min-width: 768px)">
                     <source srcset="
-                       ../images/logo/logo-mob-min.png" media=" (max-width: 767px)">
-                    <img src="../images/logo/logo-mob-min.png" alt="">
+                       ./images/logo/logo-mob-min.png" media=" (max-width: 767px)">
+                    <img src="./images/logo/logo-mob-min.png" alt="">
                 </picture>
             </a>
             <ul class="navigation__list">
@@ -20,54 +20,82 @@
             </ul>
         </nav>
         <button class="modal-btn" type="button">Buy now</button>
-        <button class="menu-btn" type="button">
-            <svg class="menu_icon" width="32px" height="32px">
-                <use href="../images/SprayIceCream.svg#menu"></use>
+        <button class="menu-toggle js-open-menu nav__burger" aria-expanded="false" aria-controls="mobile-menu">
+            <svg class="menu-toggle__icon" width="32px" height="32px">
+                <use href="./images/SprayIceCream.svg#menu"></use>
             </svg>
         </button>
     </div>
-</section>
+    <!-- Mobile-menu -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class="menu-toggle js-close-menu">
+            <svg class="menu-toggle__icon" width="32" height="32" fill="currentColor">
+                <use href="./images/SprayIceCream.svg#modal-close"></use>
+            </svg>
+        </button>
+
+        <div class="container ">
+            <div class="mob-menu-top">
+                <ul class="mobile-menu list">
+                    <li><a href="#" class="mobile-menu__link current">Home</a></li>
+                    <li><a href="#" class="mobile-menu__link">How it’s made?</a></li>
+                    <li><a href="#" class="mobile-menu__link">Our products</a></li>
+                    <li><a href="#" class="mobile-menu__link">Contact</a></li>
+                </ul>
+            </div>
+            <div class="mob-menu-bottom">
+                <button class="menu-btn" type="button">Buy now
+                    <svg class="menu-btn__icon" width="12" height="12">
+                        <use href="./images/SprayIceCream.svg#arrow"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+</header>
 <section class="hero-section">
-    <div class="container">
-        <h1>ice cream<br> made with<br> passion</h1>
-        <ul>
-            <li><a class="products-btn" href="#">Products</a></li>
-            <li><a class="products-btn" href="#">How it’s made?</a></li>
+    <div class="hero container">
+        <h1 class="hero__title">ice cream<br> made with<br> passion</h1>
+        <ul class="hero__list list">
+            <li><a class="hero__link link" href="#">Products</a></li>
+            <li><a class="hero__link--2" href="#">How it’s made?</a></li>
         </ul>
-        <div class="lorem_wrap">
+        <div class="lorem-wrap">
             <picture>
                 <source srcset="
-                 ../images/ice-cream-plate/plate-desk.png 1x,
-                 ../images/ice-cream-plate/plate-desk-2x.png 2x
+                 ./images/ice-cream-plate/plate-desk.png 1x,
+                 ./images/ice-cream-plate/plate-desk-2x.png 2x
                  " media=" (min-width: 1200px)">
                 <source srcset="
-                 ../images/ice-cream-plate/plate-tab.png 1x,
-                 ../images/ice-cream-plate/plate-tab-2x.png 2x
+                 ./images/ice-cream-plate/plate-tab.png 1x,
+                 ./images/ice-cream-plate/plate-tab-2x.png 2x
                  " media=" (min-width: 1200px)">
                 <source srcset="
-                  ../images/ice-cream-plate/plate-desk.png 1x,
-                 ../images/ice-cream-plate/plate-desk-2x.png 2x
+                  ./images/ice-cream-plate/plate-desk.png 1x,
+                 ./images/ice-cream-plate/plate-desk-2x.png 2x
                  " media=" (min-width: 1200px)">
-                <img src="../images/ice-cream-plate/plate-desk.png" alt="">
+                <img src="./images/ice-cream-plate/plate-desk.png" alt="">
             </picture>
             <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                 labore et</p>
 
         </div>
     </div>
-    <picture>
-        <source srcset="
-         ../images/ice-cream-1/ice-cream-1-desk.png 1x,
-         ../images/ice-cream-1/ice-cream-1-desk-2x.png 2x
-         " media=" (min-width: 1200px)">
-        <source srcset="
-         ../images/ice-cream-1/ice-cream-1-tab.png 1x,
-        ../images/ice-cream-1/ice-cream-1-tab-2x.png 2x
-         " media=" (min-width: 1200px)">
-        <source srcset="
-         ../images/ice-cream-1/ice-cream-1-mob.png 1x,
-         ../images/ice-cream-1/ice-cream-1-mob-2x.png 2x
-         " media=" (min-width: 1200px)">
-        <img src="../images/ice-cream-1/ice-cream-1-mob.png" alt="">
-    </picture>
+    <div class="img-wrap container">
+        <picture class="hero-img">
+            <source srcset="
+             ./images/ice-cream-1/ice-cream-1-desk.png 1x,
+             ./images/ice-cream-1/ice-cream-1-desk-2x.png 2x
+             " media="(min-width: 1200px)">
+            <source srcset="
+             ./images/ice-cream-1/ice-cream-1-tab.png 1x,
+            ./images/ice-cream-1/ice-cream-1-tab-2x.png 2x
+             " media="(min-width: 768px)">
+            <source srcset="
+             ./images/ice-cream-1/ice-cream-1-mob.png 1x,
+             ./images/ice-cream-1/ice-cream-1-mob-2x.png 2x
+             " media="(max-width: 767px)">
+            <img src="./images/ice-cream-1/ice-cream-1-mob.png" alt="">
+        </picture>
+    </div>
 </section>
