@@ -1,3 +1,7 @@
+
+
+.contacts{
+
 .container {
     box-sizing: border-box;
     width: 320px;
@@ -17,6 +21,9 @@
 
 }
 
+/*---------- Store ----------*/
+
+
 .store {
     display: block;
     box-sizing: border-box;
@@ -27,7 +34,7 @@
     padding-right: 32px;
     border-radius: 24px;
     border: solid 1px #E1E1E1;
-    background-color: #FCFCFC;
+    background-color: $main-white;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
 
@@ -42,7 +49,7 @@
     margin-top: 0;
     margin-bottom: 20px;
     text-transform: uppercase;
-    background-color: #F8D24E;
+    background-color: $main-yellow;
     border-radius: 4px;
     font-weight: 500;
     font-size: 16px;
@@ -59,7 +66,7 @@
     font-size: 16px;
     line-height: calc(30/16);
     letter-spacing: 0.04em;
-    color: #131313;
+    color: $main-black;
 }
 
 .store__location {
@@ -70,7 +77,7 @@
     font-size: 12px;
     line-height: calc(22/12);
     letter-spacing: 0.04em;
-    color: #D6936D;
+    color: $main-brown;
 }
 
 .store__location:hover,
@@ -105,7 +112,7 @@
     height: 22px;
     margin-left: 0;
     padding-left: 0;
-    color: #131313;
+    color: $main-black;
 
 }
 
@@ -131,7 +138,7 @@
     font-weight: 500;
     font-size: 12px;
     line-height: calc(19/12);
-    color: #131313;
+    color: $main-black;
 
 }
 
@@ -151,21 +158,22 @@
     justify-content: center;
     align-items: center;
     gap: 16px;
+    list-style: none;
 
 
 }
 
-.contacts__button-item {}
 
-.contacts__button-location {
+
+.button__location {
 
     display: flex;
     align-items: center;
     width: 196px;
-    padding: 12px 40px;
-    background-color: #F8D24E;
+    padding: 12px 37px;
+    background-color: $main-yellow;
     border-radius: 10px;
-    border: 2px solid #F8D24E;
+    border: 2px solid $main-yellow;
 
     font-weight: 600;
     font-size: 14px;
@@ -173,61 +181,165 @@
     color: #131313;
 }
 
-.contacts__button-location:hover {
+.button__location:hover {
     background-color: #0A8817;
     border: 2px solid #0A8817;
 
 
 }
 
-.contacts__button-location:focus {
+.button__location:focus {
     background-color: #0A8817;
     border: 2px solid #0A8817;
-    color: #FFFFFF;
+    color: $white;
+    fill: $white;
 
 }
 
-.contacts__button-location:disabled {
+.button__location:disabled {
     background-color: #ABABAB;
     border: 2px solid #ABABAB;
 
 }
 
 
-
-
-.contacts__button-franchise {
+.button__franchise {
 
     display: flex;
     align-items: center;
     width: 196px;
-    padding: 12px 55px;
+    padding: 12px 53px;
     background-color: transparent;
-    border: 2px solid #F8D24E;
+    border: 2px solid $main-yellow;
     border-radius: 10px;
 
     font-weight: 600;
     font-size: 14px;
     line-height: calc(18/14);
-    color: #131313;
+    color: $main-black;
 }
 
-.contacts__button-franchise:hover {
+.button__franchise:hover {
     border: 2px solid #0A8817;
 }
 
-.contacts__button-franchise:focus {
+.button__franchise:focus {
     border: 2px solid #0A8817;
-    color: #FFFFFF;
+    color: $white;
+    fill: $white;
 
 }
 
-.contacts__button-franchise:disabled {
+.button__franchise:disabled {
     border: 2px solid #ABABAB;
 
 }
 
-.contacts__icon {
+.button__icon {
     margin-left: 4px;
 
 }
+
+
+@media screen and (min-width: 768px) {
+
+    .container{
+        padding-right: 32px;
+        padding-left: 32px;
+        width: 768px;
+        
+    }
+
+    .contacts__stores-list{       
+        display: flex;
+        flex-flow: row;
+    }
+    
+    .store{
+        padding-top: 40px;
+        padding-bottom: 40px;
+        padding-left: 18px;
+        padding-right: 18px;
+        @include calc (3, 16px);
+    }
+    .store__region {
+        font-size: 14px;
+        line-height: calc(26/14);
+        }
+    .store__location{
+        font-size: 14px;
+        line-height: calc(26/14);
+    }
+    .store__working-day{
+        font-size: 14px;
+        line-height: calc(26/14);
+    }
+    .store__working-time {
+        font-size: 14px;
+        line-height: calc(26/14);
+    }
+    .store__link {
+        font-size: 14px;
+        line-height: calc(21/14);
+    }
+
+    .contacts__button-list {
+        flex-flow: row;
+        justify-content: center;
+        align-items: center;
+        padding-top: 40px;
+        padding-bottom: 40px;
+
+    }
+    
+}
+
+    @media screen and (min-width: 1200px) {
+
+    .container {
+        width: 1200px;
+        padding-right: 16px;
+        padding-left: 16px;     
+    }
+    
+    .store {
+        padding: 40px;
+        @include calc (3, 32px);
+    }
+
+    .store__region{
+        line-height: calc(30/16);
+    }
+    .store__location {
+        line-height: calc(29/16);
+    }
+    .store__working-day {
+        font-size: 16px;
+        line-height: calc(30/16);
+    }
+    
+    .store__working-time {
+        font-size: 16px;
+        line-height: calc(30/16);
+    }
+    .store__link {
+        font-size: 16px;
+        line-height: calc(24/16);
+    }
+
+    .contacts__button-list {
+        padding-top: 60px;
+        padding-bottom: 120px;
+        }
+
+
+}
+
+}
+
+
+
+
+
+
+
