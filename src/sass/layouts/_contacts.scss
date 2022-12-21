@@ -7,6 +7,12 @@
     width: 320px;
     padding: 20px;
     margin: auto;
+    position: relative;
+}
+.position{
+    position: absolute;
+    width: 100%;
+    top: -353px;
 }
 
 .contacts__stores-list {
@@ -16,6 +22,7 @@
     padding-left: 0;
     gap: 16px;
     padding-left: 0;
+    
 
 
 
@@ -249,6 +256,9 @@
         width: 768px;
         
     }
+    .position {
+        top: -299px;
+    }
 
     .contacts__stores-list{       
         display: flex;
@@ -289,6 +299,7 @@
         align-items: center;
         padding-top: 40px;
         padding-bottom: 40px;
+        
 
     }
     
@@ -300,6 +311,9 @@
         width: 1200px;
         padding-right: 16px;
         padding-left: 16px;     
+    }
+    .position {
+        top: -128px;
     }
     
     .store {
