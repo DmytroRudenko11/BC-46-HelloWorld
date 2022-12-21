@@ -37,6 +37,232 @@ p {
   overflow: hidden;
 }
 
+body {
+  color: #fcfcfc;
+  background-color: #84a178;
+  font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+}
+@media screen and (max-width: 479px) {
+  .container {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .container {
+    padding-right: 20px;
+    padding-left: 20px;
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    padding-right: 32px;
+    padding-left: 32px;
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    padding-right: 16px;
+    padding-left: 16px;
+    width: 1200px;
+  }
+}
+
+.page-header {
+  background-color: #84a178;
+}
+
 .header-container {
-  background-color: tomato;
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 20px 0px 20px;
+  max-width: 480px;
+}
+
+.navigation__list {
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .navigation__list {
+    display: flex;
+  }
+}
+
+.modal-btn {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .modal-btn {
+    display: block;
+  }
+}
+
+.hero.container {
+  padding-top: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.hero-section {
+  background-color: #84a178;
+}
+
+.hero__title {
+  margin-bottom: 32px;
+  font-family: "Seymour One", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 1.2692307692;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #fcfcfc;
+}
+
+.hero__list {
+  display: flex;
+  gap: 12px;
+  align-items: baseline;
+}
+
+.hero__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 108px;
+  height: 38px;
+  border: 2px solid #f8d24e;
+  border-radius: 10px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.25;
+  color: #131313;
+}
+.hero__link:hover, .hero__link:focus {
+  color: #fcfcfc;
+}
+
+.hero__link--2 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.25;
+  color: #f8d24e;
+}
+.hero__link--2:hover, .hero__link--2:focus {
+  color: #fcfcfc;
+}
+
+.lorem-wrap {
+  display: none;
+}
+
+.img-wrap {
+  display: block;
+  padding-left: 83px;
+  padding-right: 60px;
+  background-image: url(../images/dots/dots-mob-min.png);
+  background-repeat: no-repeat;
+  background-position-y: bottom;
+}
+
+@media screen and (min-width: 768px) {
+  .hero-img {
+    position: absolute;
+  }
+}
+
+.menu-toggle {
+  background-color: transparent;
+  border: none;
+}
+
+.menu-toggle__icon {
+  fill: #fcfcfc;
+}
+
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100%;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  background-color: #85a279;
+  z-index: 100;
+  overflow: scroll;
+  transform: translateX(100%);
+  transition: transform 250ms ease-in-out;
+}
+.menu-container > .container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: scroll;
+  padding: 0 40px;
+}
+
+.menu-container.is-open {
+  transform: translateX(0);
+}
+
+.menu-container .menu-toggle {
+  position: absolute;
+  top: 16px;
+  right: 20px;
+}
+
+.mob-menu-top {
+  display: flex;
+}
+
+.mobile-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.mobile-menu__link {
+  display: flex;
+  justify-content: center;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.21875;
+  color: #fcfcfc;
+}
+
+.mob-menu-bottom {
+  display: flex;
+  justify-content: center;
+}
+
+.menu-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  width: 152px;
+  height: 42px;
+  background: #f8d24e;
+  border: transparent;
+  border-radius: 10px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.2142857143;
+  color: #000000;
 }/*# sourceMappingURL=index.css.map */
