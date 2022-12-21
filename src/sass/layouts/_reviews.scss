@@ -1,49 +1,60 @@
-.reviews {
-  padding-top: 60px;
-  padding-bottom: 393px;
-  background-image: url(../images/bcg/bcg-mob.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  @include retina {
-    background-image: url(../images/bcg/bcg-mob-2x.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-  }
+// .reviews {
+//   padding-top: 60px;
+//   padding-bottom: 393px;
+//   background-image: url(../images/bcg/bcg-mob.jpg);
+//   background-repeat: no-repeat;
+//   background-size: cover;
+//   background-position: center;
+//   @include retina {
+//     background-image: url(../images/bcg/bcg-mob-2x.jpg);
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     background-position: center;
+//   }
+//   @include tablet {
+//     padding-top: 100px;
+//     padding-bottom: 379px;
+//     background-image: url(../images/bcg/bcg-tab.jpg);
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     background-position: center;
+//     @include retina {
+//       background-image: url(../images/bcg/bcg-tab-2x.jpg);
+//       background-repeat: no-repeat;
+//       background-size: cover;
+//       background-position: center;
+//     }
+//   }
+//   @include desktop {
+//     padding-top: 140px;
+//     padding-bottom: 228px;
+//     background-image: url(../images/bcg/bcg.jpg);
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     background-position: center;
+//     @include retina {
+//       background-image: url(../images/bcg/bcg-2x.jpg);
+//       background-repeat: no-repeat;
+//       background-size: cover;
+//       background-position: center;
+//     }
+//   }
+// }
+
+.container__reviews {
+  margin-top: 80px;
+
   @include tablet {
-    padding-top: 100px;
-    padding-bottom: 379px;
-    background-image: url(../images/bcg/bcg-tab.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    @include retina {
-      background-image: url(../images/bcg/bcg-tab-2x.jpg);
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
-    }
+    margin-top: 100px;
   }
   @include desktop {
-    padding-top: 140px;
-    padding-bottom: 228px;
-    background-image: url(../images/bcg/bcg.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    @include retina {
-      background-image: url(../images/bcg/bcg-2x.jpg);
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
-    }
+    margin-top: 140px;
   }
 }
 
-.reviews__item {
-  height: 400px;
-}
+// .reviews__item {
+//   height: 400px;
+// }
 
 .reviews__photo {
   display: block;
@@ -92,6 +103,7 @@
   @include tablet {
     font-size: 16px;
     line-height: 1.86;
+    margin-bottom: 32px;
   }
 }
 
@@ -106,11 +118,15 @@
   background-color: $bcg-color;
 }
 
+.swiper-pagination {
+  position: static;
+}
+
 .swiper-horizontal > .swiper-pagination-bullets,
 .swiper-pagination-bullets.swiper-pagination-horizontal,
 .swiper-pagination-custom,
 .swiper-pagination-fraction {
-  bottom: 0px;
+  bottom: -10px;
   left: 0;
   width: 100%;
 }
