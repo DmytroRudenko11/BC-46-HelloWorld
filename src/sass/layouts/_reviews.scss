@@ -43,18 +43,7 @@
 
 .container__reviews {
   margin-top: 80px;
-
-  @include tablet {
-    margin-top: 100px;
-  }
-  @include desktop {
-    margin-top: 140px;
-  }
 }
-
-// .reviews__item {
-//   height: 400px;
-// }
 
 .reviews__photo {
   display: block;

@@ -30,3 +30,8 @@ body {
     width: 1200px;
   }
 }
+
+a,
+button {
+  cursor: url(../images/cursor.svg), auto;
+}
