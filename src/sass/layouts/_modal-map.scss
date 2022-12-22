@@ -64,7 +64,6 @@
     color: #131313;
 }
 
-
 .modal-map__map-div {
     display: block;
     width: 100%;
@@ -118,7 +117,6 @@
 }
 
 @media screen and (min-width: 480px) {
-
     .backdrop-map {
       padding-left: 20px;
       padding-right: 20px;
@@ -131,22 +129,18 @@
       padding-right: 50px;
     }
 }
+
 @media screen and (min-width: 768px){
-    
-    
     .modal-map {
       width: 650px;
       height: 600px;
-      max-height: 500px;
     }
+
     .modal-map__map-div {
-
       width: 80%;
-    
     }
-    
-
 }
+
 @media screen and (min-width: 1200px) {
   .backdrop-map {
     width: 100%;
@@ -155,7 +149,7 @@
   }
 
 
-  }
+}
 
   
 
