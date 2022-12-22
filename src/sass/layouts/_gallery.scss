@@ -1,0 +1,86 @@
+.gallery {
+  position: relative;
+  padding-top: 180px;
+
+  padding-bottom: 393px;
+  background-image: url(../images/bcg/bcg-mob.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  @include retina {
+    background-image: url(../images/bcg/bcg-mob-2x.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  @media screen and (max-width: 469px) {
+    padding-top: 120px;
+  }
+
+  @include tablet {
+    padding-top: 200px;
+
+    padding-bottom: 379px;
+    background-image: url(../images/bcg/bcg-tab.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    @include retina {
+      background-image: url(../images/bcg/bcg-tab-2x.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+  }
+
+  @include desktop {
+    padding-top: 380px;
+
+    padding-bottom: 228px;
+    background-image: url(../images/bcg/bcg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    @include retina {
+      background-image: url(../images/bcg/bcg-2x.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+  }
+}
+
+.container__gallery {
+  width: 100%;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  top: -30px;
+
+  @include mobile {
+    width: 480px;
+  }
+
+  @include tablet {
+    width: 768px;
+    top: -140px;
+  }
+
+  @include desktop {
+    width: 1200px;
+    top: -95px;
+  }
+}
+
+.gallery__photo {
+  display: block;
+  border-radius: 24px;
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+
+  @include desktop {
+    width: 1013px;
+  }
+}

@@ -37,5 +37,20 @@
     <include src="./partials/contacts.html"></include>
 
     <include src="./partials/footer.html"></include>
+
+    <!------- swiper script ---------->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper('.gallerySwiper', {});
+    </script>
+    <script>
+      var swiper = new Swiper('.review-Swiper', {
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+      });
+    </script>
   </body>
 </html>
