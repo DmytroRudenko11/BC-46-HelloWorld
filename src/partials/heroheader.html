@@ -108,15 +108,17 @@
 </header>
 <section class="hero-section">
   <div class="hero container">
-    <h1 class="hero__title">
-      ice cream<br />
-      made with<br />
-      passion
-    </h1>
-    <ul class="hero__list list">
-      <li><a class="hero__link link" href="#">Products</a></li>
-      <li><a class="hero__link--2" href="#">How it’s made?</a></li>
-    </ul>
+    <div class="hero-wrap">
+      <h1 class="hero__title">
+        ice cream<br />
+        made with<br />
+        passion
+      </h1>
+      <ul class="hero__list list">
+        <li><a class="hero__link link" href="#">Products</a></li>
+        <li><a class="hero__link--2" href="#">How it’s made?</a></li>
+      </ul>
+    </div>
     <div class="lorem-wrap">
       <picture>
         <source
@@ -135,10 +137,17 @@
         />
         <img src="./images/ice-cream-plate/plate-desk.png" alt="" />
       </picture>
-      <p class="lorem-wrap__text">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et
-      </p>
+      <div class="arrow">
+        <p class="arrow__text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et
+        </p>
+        <a href="#" class="arrow__link">
+          <svg class="arrow__icon" width="40" height="16">
+            <use href="./images/SprayIceCream.svg#long-arrow"></use>
+          </svg>
+        </a>
+      </div>
     </div>
     <div class="img-wrap container">
       <picture class="hero-img">
@@ -165,6 +174,16 @@
         />
         <img src="./images/ice-cream-1/ice-cream-1-mob.png" alt="" />
       </picture>
+    </div>
+    <div class="our-shops">
+      <ul class="our-shops__list list">
+        <li class="our-shops__item">
+          <span class="our-shops__number">16</span> cafes
+        </li>
+        <li class="our-shops__item">
+          <span class="our-shops__number">23</span> food trucks
+        </li>
+      </ul>
     </div>
   </div>
 </section>
