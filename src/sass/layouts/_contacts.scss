@@ -46,8 +46,6 @@
 }
 
 .store__name {
-
-
     display: inline-block;
     text-align: center;
     padding: 4px 22px;
@@ -133,7 +131,6 @@
 
 }
 
-
 .store__item:first-child {
     margin-bottom: 6px;
 }
@@ -164,11 +161,7 @@
     align-items: center;
     gap: 16px;
     list-style: none;
-
-
 }
-
-
 
 .button__location {
 
@@ -322,8 +315,8 @@
 
     .container {
         width: 1200px;
-         
     }
+
     .position {
         top: -128px;
         padding-top: 620px;
