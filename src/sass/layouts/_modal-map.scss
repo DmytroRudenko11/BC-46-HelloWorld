@@ -110,6 +110,12 @@
     color: #131313;
 }
 
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
 @media screen and (max-width: 479px) {
     .backdrop-map {
         width: 100%;
