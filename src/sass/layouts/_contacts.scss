@@ -1,5 +1,7 @@
 
 
+.contacts{
+
 
 
 .container {
@@ -7,6 +9,7 @@
     width: 320px;
     margin: auto;
     position: relative;
+    padding-top: 1080px;
 
 }
 .position{
@@ -15,7 +18,7 @@
     transform: translate(-50%);
     width: 100%;
     top: -353px;
-    padding: 1080px 20px 20px 20px;
+    padding: 0 20px 20px 20px;
     
 }
 
@@ -255,6 +258,7 @@
     .container{
         
         width: 768px;
+        padding-top: 350px;
         
     }
 
@@ -262,7 +266,7 @@
         top: -299px;
         padding-right: 32px;
         padding-left: 32px;
-        padding-top: 350px;
+        
     }
 
     .contacts__stores-list{       
@@ -315,11 +319,11 @@
 
     .container {
         width: 1200px;
+        padding-top: 620px;
     }
 
     .position {
         top: -128px;
-        padding-top: 620px;
         padding-right: 16px;
         padding-left: 16px;
     }
@@ -358,7 +362,7 @@
 }
 
 
-
+}
 
 
 
