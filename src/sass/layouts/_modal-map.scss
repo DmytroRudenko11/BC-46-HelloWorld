@@ -17,17 +17,18 @@
 
 .modal-map {
     position: absolute;
-    top: 5%;
+    top: 10%;
     left: 50%;
     transform: translate(-50%, 0);
-    max-width: 90%;
+    width: 300px;
+    height: 350px;
     max-height: 458px;    
     border-radius: 4px;
     display: flex;
     flex-flow: column;
     justify-content: center;
     align-items: center;
-    padding: 32px 60px;
+    padding: 10px 10px;
     background: #FCFCFC;
     border: 2px solid #F8D24E;
     border-radius: 10px;
@@ -75,6 +76,7 @@
 .modal-map__img{
   border-radius: 10px;
   width: 100%;
+  height: 100%;
 }
 .modal-map__div-link{
     display: flex;
@@ -108,4 +110,57 @@
     line-height: calc(17/14);
     color: #131313;
 }
+
+@media screen and (max-width: 479px) {
+    .backdrop-map {
+        width: 100%;
+      }
+}
+
+@media screen and (min-width: 480px) {
+
+    .backdrop-map {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    
+    .modal-map {     
+      width: 440px;
+      height: 400px;
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+}
+@media screen and (min-width: 768px){
+    
+    
+    .modal-map {
+      width: 650px;
+      height: 600px;
+      max-height: 500px;
+    }
+    .modal-map__map-div {
+
+      width: 80%;
+    
+    }
+    
+
+}
+@media screen and (min-width: 1200px) {
+  .backdrop-map {
+    width: 100%;
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+
+
+  }
+
+  
+
+  
+
+
+
 
