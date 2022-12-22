@@ -34,7 +34,9 @@
   height: 644px;
   padding: 32px 54px;
 
-  background-color: white;
+  background-color: $main-white;
+  border-radius: 10px;
+  border: 2px solid #f8d24e;
 
   transform: translate(-50%, -50%) scaleY(1);
   z-index: 2;
