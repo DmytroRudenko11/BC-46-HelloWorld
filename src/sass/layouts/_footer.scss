@@ -1,4 +1,8 @@
 .footer-page {
+  @media screen and (max-width: 767px) {
+    padding-top: 190px;
+  }
+
   .container {
     box-sizing: border-box;
     width: 320px;
