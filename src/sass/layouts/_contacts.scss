@@ -1,0 +1,328 @@
+.contacts {
+  .container {
+    box-sizing: border-box;
+    width: 320px;
+    margin: auto;
+    position: relative;
+    padding-top: 1080px;
+  }
+  .position {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    width: 100%;
+    top: -353px;
+    padding: 0 20px 20px 20px;
+  }
+
+  .contacts__stores-list {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding-left: 0;
+    gap: 16px;
+    padding-left: 0;
+  }
+
+  /*---------- Store ----------*/
+
+  .store {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 24px;
+    padding-left: 32px;
+    padding-right: 32px;
+    border-radius: 24px;
+    border: solid 1px #e1e1e1;
+    background-color: $main-white;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  .store__name {
+    display: inline-block;
+    text-align: center;
+    padding: 4px 22px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    background-color: $main-yellow;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: calc(22 / 16);
+    letter-spacing: 0.04em;
+    color: #131313;
+  }
+
+  .store__region {
+    margin-left: 0;
+    margin-top: 0;
+    margin-bottom: 8px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: calc(30 / 16);
+    letter-spacing: 0.04em;
+    color: $main-black;
+  }
+
+  .store__location {
+    display: block;
+    margin-bottom: 24px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: calc(22 / 12);
+    letter-spacing: 0.04em;
+    color: $main-brown;
+  }
+
+  .store__location:hover,
+  .store__location:focus {
+    text-decoration: underline;
+  }
+
+  .store__time {
+    display: flex;
+    flex-flow: column;
+
+    padding-left: 0;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    border-top: 1px solid #e1e1e1;
+    border-bottom: 1px solid #e1e1e1;
+  }
+
+  .store__time-item {
+    display: flex;
+    flex-flow: column;
+  }
+
+  .store__time-item:last-child {
+    padding-top: 8px;
+  }
+
+  .store__working-day {
+    display: inline-block;
+    height: 22px;
+    margin-left: 0;
+    padding-left: 0;
+    color: $main-black;
+  }
+
+  .store__working-time {
+    display: inline-block;
+    height: 22px;
+    color: #ababab;
+  }
+
+  .store__list {
+    padding-left: 0;
+    padding-top: 24px;
+  }
+
+  .store__item:first-child {
+    margin-bottom: 6px;
+  }
+
+  .store__link {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: calc(19 / 12);
+    color: $main-black;
+  }
+
+  .store__link:hover,
+  .store__link:focus {
+    text-decoration: underline;
+  }
+
+  /*---------- Buttons ----------*/
+
+  .contacts__button-list {
+    display: flex;
+    flex-flow: column;
+    padding-top: 20px;
+    // padding-bottom: 60px;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    list-style: none;
+  }
+
+  .button__location {
+    display: flex;
+    align-items: center;
+    width: 196px;
+    padding: 12px 37px;
+    background-color: $main-yellow;
+    border-radius: 10px;
+    border: 2px solid $main-yellow;
+
+    font-weight: 600;
+    font-size: 14px;
+    line-height: calc(18 / 14);
+    color: #131313;
+  }
+
+  .button__location:hover {
+    background-color: #0a8817;
+    border: 2px solid #0a8817;
+  }
+
+  .button__location:focus {
+    background-color: #0a8817;
+    border: 2px solid #0a8817;
+    color: $white;
+    fill: $white;
+  }
+
+  .button__location:disabled {
+    background-color: #ababab;
+    border: 2px solid #ababab;
+  }
+
+  .button__franchise {
+    display: flex;
+    align-items: center;
+    width: 196px;
+    padding: 12px 53px;
+    background-color: transparent;
+    border: 2px solid $main-yellow;
+    border-radius: 10px;
+
+    font-weight: 600;
+    font-size: 14px;
+    line-height: calc(18 / 14);
+    color: $main-black;
+  }
+
+  .button__franchise:hover {
+    border: 2px solid #0a8817;
+  }
+
+  .button__franchise:focus {
+    border: 2px solid #0a8817;
+    color: $white;
+    fill: $white;
+  }
+
+  .button__franchise:disabled {
+    border: 2px solid #ababab;
+  }
+
+  .button__icon {
+    margin-left: 4px;
+  }
+  @media screen and (max-width: 479px) {
+    .container {
+      width: 100%;
+    }
+  }
+
+  @media screen and (min-width: 480px) {
+    .container {
+      width: 480px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    .container {
+      width: 768px;
+      padding-top: 350px;
+    }
+
+    .position {
+      top: -299px;
+      padding-right: 32px;
+      padding-left: 32px;
+    }
+
+    .contacts__stores-list {
+      display: flex;
+      flex-flow: row;
+      justify-content: center;
+    }
+
+    .store {
+      padding-top: 40px;
+      padding-bottom: 40px;
+      padding-left: 18px;
+      padding-right: 18px;
+      @include calc(3, 16px);
+    }
+    .store__region {
+      font-size: 14px;
+      line-height: calc(26 / 14);
+    }
+    .store__location {
+      font-size: 14px;
+      line-height: calc(26 / 14);
+    }
+    .store__working-day {
+      font-size: 14px;
+      line-height: calc(26 / 14);
+    }
+    .store__working-time {
+      font-size: 14px;
+      line-height: calc(26 / 14);
+    }
+    .store__link {
+      font-size: 14px;
+      line-height: calc(21 / 14);
+    }
+
+    .contacts__button-list {
+      flex-flow: row;
+      justify-content: center;
+      align-items: center;
+      padding-top: 40px;
+      // padding-bottom: 40px;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    .container {
+      width: 1200px;
+      padding-top: 620px;
+    }
+
+    .position {
+      top: -128px;
+      padding-right: 16px;
+      padding-left: 16px;
+    }
+
+    .store {
+      padding: 40px;
+      @include calc(3, 32px);
+    }
+
+    .store__region {
+      line-height: calc(30 / 16);
+    }
+    .store__location {
+      line-height: calc(29 / 16);
+    }
+    .store__working-day {
+      font-size: 16px;
+      line-height: calc(30 / 16);
+    }
+
+    .store__working-time {
+      font-size: 16px;
+      line-height: calc(30 / 16);
+    }
+    .store__link {
+      font-size: 16px;
+      line-height: calc(24 / 16);
+    }
+
+    .contacts__button-list {
+      padding-top: 60px;
+      // padding-bottom: 120px;
+    }
+  }
+}

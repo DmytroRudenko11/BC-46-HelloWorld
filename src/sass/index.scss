@@ -1,5 +1,5 @@
 @import './common';
-@import './utils/vars.scss';
+@import './utils/vars';
 @import './utils/mixins';
 @import './utils/reset';
 @import './utils/global';
@@ -12,4 +12,10 @@
 @import './layouts/reviews';
 @import './layouts/contacts';
 @import './layouts/footer';
+
 @import './layouts/modal-buy-now';
+
+@import './layouts/modal-products';
+
+@import './layouts/modal-map';
+

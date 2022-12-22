@@ -43,6 +43,8 @@
 
     <include src="./partials/modal-buy-now.html"></include>
 
+    <!---------------- menu anchor -------------->
+
     <script
       defer
       src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
@@ -50,6 +52,32 @@
       crossorigin="anonymous"
     ></script>
     <script defer src="./js/mobile-menu.js"></script>
+
     <script src="./js/modal-buy-now.js"></script>
+
+
+    <!------ modal-windows --------->
+
+    <script src="./js/modal-buy-now.js"></script>
+
+    <include src="./partials/modal-products.html"></include>
+
+    <include src="./partials/modal-map.html"></include>
+
+    <!------- swiper script ---------->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper('.gallerySwiper', {});
+    </script>
+    <script>
+      var swiper = new Swiper('.review-Swiper', {
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+      });
+    </script>
+
   </body>
 </html>
