@@ -5,7 +5,6 @@
 .container {
     box-sizing: border-box;
     width: 320px;
-    padding: 20px;
     margin: auto;
     position: relative;
 
@@ -16,6 +15,7 @@
     transform: translate(-50%);
     width: 100%;
     top: -353px;
+    padding: 1080px 20px 20px 20px;
     
 }
 
@@ -34,7 +34,7 @@
 .store {
     display: block;
     box-sizing: border-box;
-    width: 90%;
+    width: 100%;
     padding-top: 40px;
     padding-bottom: 24px;
     padding-left: 32px;
@@ -260,18 +260,22 @@
 @media screen and (min-width: 768px) {
 
     .container{
-        padding-right: 32px;
-        padding-left: 32px;
+        
         width: 768px;
         
     }
+
     .position {
         top: -299px;
+        padding-right: 32px;
+        padding-left: 32px;
+        padding-top: 350px;
     }
 
     .contacts__stores-list{       
         display: flex;
         flex-flow: row;
+        justify-content: center;
     }
     
     .store{
@@ -318,11 +322,13 @@
 
     .container {
         width: 1200px;
-        padding-right: 16px;
-        padding-left: 16px;     
+         
     }
     .position {
         top: -128px;
+        padding-top: 620px;
+        padding-right: 16px;
+        padding-left: 16px;
     }
     
     .store {
