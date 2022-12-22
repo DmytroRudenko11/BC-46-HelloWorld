@@ -24,7 +24,7 @@
 
 // __Modal__
 
-.modal {
+.modal-buy {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -32,7 +32,7 @@
 
   width: 568px;
   height: 644px;
-  padding: 40px;
+  padding: 32px 54px;
 
   background-color: white;
 
@@ -51,7 +51,7 @@
   }
 }
 
-.form__title {
+.modal-buy-title {
   font-family: 'Seymour One';
   font-style: normal;
   font-weight: 400;
@@ -60,4 +60,73 @@
 
   text-align: center;
   color: $main-black;
+}
+
+// Form__________
+
+.form-buy-container {
+  display: flex;
+  justify-content: center;
+}
+.form-buy {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 368px;
+
+  &__input {
+    width: 100%;
+    height: 42px;
+    padding-left: 16px;
+
+    border: 1px solid #84a178;
+    border-radius: 10px;
+    background: rgba(248, 210, 78, 0.1);
+
+    &::placeholder {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 1, 4%;
+      color: $main-black;
+    }
+  }
+
+  &__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 121px;
+    height: 42px;
+
+    background-color: $main-yellow;
+    border-radius: 10px;
+    border: transparent;
+
+    font-weight: 600;
+    font-size: 14px;
+    line-height: calc(17 / 14);
+    color: $main-black;
+  }
+}
+
+.buy-btn-wrap {
+  display: flex;
+  justify-content: center;
+}
+
+.coment-buy__input {
+  width: 100%;
+  height: 84px;
+  padding-top: 11px;
+  padding-left: 16px;
+  border: 1px solid #84a178;
+  border-radius: 10px;
+  background: rgba(248, 210, 78, 0.1);
+
+  &::placeholder {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1, 4%;
+    color: $main-black;
+  }
 }

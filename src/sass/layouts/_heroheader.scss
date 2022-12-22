@@ -86,6 +86,10 @@
   }
 }
 
+.modal-btn:focus .menu-btn__icon {
+  fill: $main-white;
+}
+
 .btn-wrap {
   display: flex;
   gap: 32px;

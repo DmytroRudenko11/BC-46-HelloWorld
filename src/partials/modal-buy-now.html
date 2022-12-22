@@ -1,45 +1,54 @@
 <!-- Modal -->
 <div class="backdrop is-hidden" data-modal>
-  <div class="modal">
-    <button data-modal-close type="button" class="modal__btn">
-      <svg class="modal__icon" width="24" height="24">
+  <div class="modal-buy">
+    <button data-modal-close type="button" class="modal-buy__btn">
+      <svg class="modal-buy__icon" width="24" height="24">
         <use href="./images/SprayIceCream.svg#modal-close"></use>
       </svg>
     </button>
-    <p class="form__title">Buy now</p>
-    <form class="form">
-      <label class="form__label">
-        <span class="form__wrap"
-          ><input
-            class="form__input"
-            type="text"
-            name="user-name"
-            required
-            minlength="2"
-            placeholder="Name"
-          />
-        </span>
-      </label>
-      <label class="form__label">
-        <span class="form__wrap"
-          ><input
-            type="tel"
-            class="form__input"
-            id="user-tel"
-            placeholder="Phone"
-            required
-          />
-        </span>
-      </label>
-      <div class="coment">
-        <textarea
-          class="coment__input"
-          name="user-coment"
-          id="user-coment"
-          placeholder="Comment"
-        ></textarea>
-      </div>
-      <button class="form-button" type="submit">Submit</button>
-    </form>
+    <p class="modal-buy-title">Buy now</p>
+    <ul class="modal-buy__list list">
+      <li class="modal-buy__item"></li>
+      <li class="modal-buy__item"></li>
+      <li class="modal-buy__item"></li>
+    </ul>
+    <div class="form-buy-container">
+      <form class="form-buy">
+        <label class="form-buy__label">
+          <span class="form-buy__wrap"
+            ><input
+              class="form-buy__input"
+              type="text"
+              name="user-name"
+              required
+              minlength="2"
+              placeholder="Name"
+            />
+          </span>
+        </label>
+        <label class="form-buy__label">
+          <span class="form-buy__wrap"
+            ><input
+              type="tel"
+              class="form-buy__input"
+              id="user-tel"
+              placeholder="Phone"
+              required
+            />
+          </span>
+        </label>
+        <div class="coment-buy">
+          <textarea
+            class="coment-buy__input"
+            name="user-coment"
+            id="user-coment"
+            placeholder="Comment"
+          ></textarea>
+        </div>
+        <div class="buy-btn-wrap">
+          <button class="form-buy__button" type="submit">Submit</button>
+        </div>
+      </form>
+    </div>
   </div>
 </div>
