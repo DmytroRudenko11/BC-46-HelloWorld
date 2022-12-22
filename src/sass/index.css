@@ -88,6 +88,7 @@ body {
 @media screen and (min-width: 768px) {
   .header-container {
     min-width: 768px;
+    padding: 20px 32px 0;
   }
 }
 
@@ -132,18 +133,28 @@ body {
 
 .hero.container {
   padding-top: 50px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 0px;
+  padding-right: 0px;
   position: relative;
 }
 @media screen and (min-width: 768px) {
   .hero.container {
-    padding: 14px 32px 0;
+    padding: 14px 0 0;
   }
 }
 
 .hero-section {
   background-color: #84a178;
+}
+
+.hero-wrap {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+@media screen and (min-width: 768px) {
+  .hero-wrap {
+    padding-left: 32px;
+  }
 }
 
 .hero__title {
@@ -203,7 +214,24 @@ body {
 .lorem-wrap {
   display: none;
 }
-.lorem-wrap__text {
+@media screen and (min-width: 768px) {
+  .lorem-wrap {
+    display: flex;
+    gap: 32px;
+    align-items: flex-end;
+    position: absolute;
+    bottom: 12px;
+    left: 32px;
+    z-index: 1;
+  }
+}
+
+.arrow {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.arrow__text {
   display: block;
   width: 139px;
   height: 85px;
@@ -211,15 +239,11 @@ body {
   font-size: 12px;
   line-height: 140%;
 }
-@media screen and (min-width: 768px) {
-  .lorem-wrap {
-    display: flex;
-    gap: 32px;
-    align-items: center;
-    position: absolute;
-    bottom: 12px;
-    left: 32px;
-  }
+.arrow__link {
+  width: 40px;
+}
+.arrow__icon {
+  fill: #fcfcfc;
 }
 
 .img-wrap {
@@ -272,7 +296,42 @@ body {
   }
 }
 
+.our-shops {
+  display: none;
+  position: absolute;
+  top: 28px;
+  right: 32px;
+}
+.our-shops__list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.our-shops__item {
+  display: flex;
+  flex-direction: column;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 1.25;
+  text-align: right;
+}
+.our-shops__number {
+  color: #131313;
+  font-weight: 900;
+  font-size: 28px;
+  line-height: 1.2142857143;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+@media screen and (min-width: 768px) {
+  .our-shops {
+    display: block;
+  }
+}
+
 .menu-toggle {
+  display: flex;
+  align-items: center;
   background-color: transparent;
   border: none;
 }
