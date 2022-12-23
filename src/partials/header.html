@@ -64,54 +64,63 @@
   </div>
   <!-- Mobile-menu -->
   <div class="menu-container js-menu-container" id="mobile-menu">
-    <a href="#" class="menu-logo">
-      <picture>
-        <source
-          srcset="
-            ./images/logo/logo-desk-min.png    1x,
-            ./images/logo/logo-desk-2x-min.png 2x
-          "
-          media=" (min-width: 1200px)"
-        />
-        <source
-          srcset="
-            ./images/logo/logo-tab-min.png    1x,
-            ./images/logo/logo-tab-2x-min.png 2x
-          "
-          media=" (min-width: 768px)"
-        />
-        <source
-          srcset="
-            ./images/logo/logo-mob-min.png    1x,
-            ./images/logo/logo-mob-2x-min.png 2x
-          "
-          media=" (max-width: 767px)"
-        />
-        <img src="./images/logo/logo-mob-min.png" alt="" />
-      </picture>
-    </a>
-    <button class="menu-toggle js-close-menu">
-      <svg class="menu-toggle__icon" width="32" height="32" fill="currentColor">
-        <use href="./images/SprayIceCream.svg#modal-close"></use>
-      </svg>
-    </button>
+    <div class="container">
+      <a href="#" class="menu-logo">
+        <picture>
+          <source
+            srcset="
+              ./images/logo/logo-desk-min.png    1x,
+              ./images/logo/logo-desk-2x-min.png 2x
+            "
+            media=" (min-width: 1200px)"
+          />
+          <source
+            srcset="
+              ./images/logo/logo-tab-min.png    1x,
+              ./images/logo/logo-tab-2x-min.png 2x
+            "
+            media=" (min-width: 768px)"
+          />
+          <source
+            srcset="
+              ./images/logo/logo-mob-min.png    1x,
+              ./images/logo/logo-mob-2x-min.png 2x
+            "
+            media=" (max-width: 767px)"
+          />
+          <img src="./images/logo/logo-mob-min.png" alt="" />
+        </picture>
+      </a>
+      <button class="menu-toggle js-close-menu">
+        <svg
+          class="menu-toggle__icon"
+          width="32"
+          height="32"
+          fill="currentColor"
+        >
+          <use href="./images/SprayIceCream.svg#modal-close"></use>
+        </svg>
+      </button>
 
-    <div class="mob-wrap">
-      <div class="mob-menu-top">
-        <ul class="mobile-menu list">
-          <li><a href="#" class="mobile-menu__link link">Home</a></li>
-          <li><a href="#" class="mobile-menu__link link">How it’s made?</a></li>
-          <li><a href="#" class="mobile-menu__link link">Our products</a></li>
-          <li><a href="#" class="mobile-menu__link link">Contact</a></li>
-        </ul>
-      </div>
-      <div class="mob-menu-bottom">
-        <button data-modal-open class="menu-btn" type="button">
-          Buy now
-          <svg class="menu-btn__icon" width="12" height="12">
-            <use href="./images/SprayIceCream.svg#arrow"></use>
-          </svg>
-        </button>
+      <div class="mob-wrap">
+        <div class="mob-menu-top">
+          <ul class="mobile-menu list">
+            <li><a href="#" class="mobile-menu__link link">Home</a></li>
+            <li>
+              <a href="#" class="mobile-menu__link link">How it’s made?</a>
+            </li>
+            <li><a href="#" class="mobile-menu__link link">Our products</a></li>
+            <li><a href="#" class="mobile-menu__link link">Contact</a></li>
+          </ul>
+        </div>
+        <div class="mob-menu-bottom">
+          <button data-modal-open class="menu-btn" type="button">
+            Buy now
+            <svg class="menu-btn__icon" width="12" height="12">
+              <use href="./images/SprayIceCream.svg#arrow"></use>
+            </svg>
+          </button>
+        </div>
       </div>
     </div>
   </div>

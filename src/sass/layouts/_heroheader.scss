@@ -402,10 +402,12 @@
   transition: transform 250ms ease-in-out;
 
   > .container {
+    position: relative;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
     overflow: scroll;
 
     padding: 0 40px;
@@ -452,6 +454,7 @@
     font-weight: 700;
     font-size: 32px;
     line-height: calc(39 / 32);
+    text-align: center;
 
     color: $main-white;
 
