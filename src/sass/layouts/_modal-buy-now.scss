@@ -2,7 +2,7 @@
 
 .backdrop {
   position: fixed;
-  z-index: 2;
+  z-index: 101;
   top: 0;
   left: 0;
   width: 100%;
@@ -32,7 +32,7 @@
 
   width: 568px;
   height: 644px;
-  padding: 32px 54px;
+  padding: 32px 54px 0;
 
   background-color: $main-white;
   border-radius: 10px;
@@ -51,9 +51,79 @@
     background: transparent;
     border: transparent;
   }
+
+  &__list {
+    display: flex;
+    gap: 32px;
+    margin-bottom: 40px;
+  }
+
+  &__item-1 {
+    @extend %buy-item;
+    border-color: #84a178;
+    position: relative;
+  }
+  &__item-2 {
+    @extend %buy-item;
+    border-color: transparent;
+    background-color: $secondary-yellow;
+    position: relative;
+  }
+  &__item-3 {
+    @extend %buy-item;
+    border-color: $main-brown;
+    position: relative;
+  }
+
+  &__circle-1 {
+    top: 7px;
+    left: -2px;
+    transform: translateY(-50%);
+    @extend %buy-circle;
+    background: linear-gradient(
+        0deg,
+        rgba(156, 190, 143, 0.7),
+        rgba(156, 190, 143, 0.7)
+      ),
+      #d9d9d9;
+    box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+  }
+  &__circle-2 {
+    top: 7px;
+    left: -2px;
+    transform: translateY(-50%);
+    @extend %buy-circle;
+    background: linear-gradient(
+        0deg,
+        rgba(248, 210, 78, 0.7),
+        rgba(248, 210, 78, 0.7)
+      ),
+      #d9d9d9;
+    box-shadow: 0px 5.26027px 19.726px rgba(153, 114, 23, 0.25);
+  }
+  &__circle-3 {
+    top: 7px;
+    left: -2px;
+    transform: translateY(-50%);
+    @extend %buy-circle;
+    background: linear-gradient(
+        0deg,
+        rgba(213, 117, 63, 0.7),
+        rgba(213, 117, 63, 0.7)
+      ),
+      #d9d9d9;
+    box-shadow: 0px 5.26027px 19.726px rgba(0, 0, 0, 0.25);
+  }
+}
+
+.modal-buy__img {
+  position: absolute;
+  bottom: 7px;
+  left: 0;
 }
 
 .modal-buy-title {
+  margin-bottom: 103px;
   font-family: 'Seymour One';
   font-style: normal;
   font-weight: 400;
@@ -131,4 +201,8 @@
     line-height: 1, 4%;
     color: $main-black;
   }
+}
+
+.coment-buy {
+  margin-bottom: 16px;
 }

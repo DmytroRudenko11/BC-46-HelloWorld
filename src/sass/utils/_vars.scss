@@ -11,3 +11,25 @@ $main-yellow: #f8d24e;
 $secondary-yellow: #efd478;
 
 $main-brown: #d6936d;
+
+%buy-item {
+  min-width: 132px;
+  height: 135px;
+  padding: 95px 0 20px;
+  border: 2px solid;
+  border-radius: 15px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(20 / 16);
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $main-black;
+}
+
+%buy-circle {
+  width: 132px;
+  height: 132px;
+  border-radius: 50%;
+  position: absolute;
+}
