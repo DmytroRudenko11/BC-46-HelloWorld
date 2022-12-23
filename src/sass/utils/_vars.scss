@@ -25,11 +25,11 @@ $main-brown: #d6936d;
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: $main-black;
+  position: relative;
 }
 
 %buy-circle {
   width: 132px;
   height: 132px;
   border-radius: 50%;
-  position: absolute;
 }
