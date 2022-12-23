@@ -2,10 +2,9 @@
 }
 
 .about {
-  padding-top: 61px;
+  padding-top: 60px;
 
   @include tablet {
-    padding-top: 60px;
     padding-bottom: 80px;
   }
 }
@@ -23,6 +22,11 @@
     font-size: 22px;
     line-height: calc(27 / 22);
     letter-spacing: 0.04em;
+  }
+
+  @include desktop {
+    font-size: 30px;
+    line-height: calc(37 / 22);
   }
 }
 
@@ -50,6 +54,11 @@
     line-height: calc(43 / 34);
     letter-spacing: 0.06em;
   }
+
+  @include desktop {
+    font-size: 36px;
+    line-height: calc(45 / 36);
+  }
 }
 .about-wrap {
   @include tablet {
@@ -75,6 +84,11 @@
     height: 330px;
     border-radius: 165px;
   }
+  @include desktop {
+    width: 490px;
+    height: 490px;
+    border-radius: 250px;
+  }
 }
 .cow-image {
   position: absolute;
@@ -85,7 +99,11 @@
 
   @include tablet {
     position: static;
-    transform: translateY(20px);
+    transform: translateY(26px);
+  }
+
+  @include desktop {
+    transform: translateY(32px);
   }
 }
 
@@ -94,6 +112,10 @@
   @include tablet {
     margin-left: 38px;
     margin-top: 0;
+  }
+  @include desktop {
+    margin-left: 109px;
+    padding-top: 90px;
   }
 }
 
@@ -117,6 +139,13 @@
   letter-spacing: 0.04em;
   @include tablet {
     text-align: left;
+  }
+  @include desktop {
+    font-size: 16px;
+    line-height: 1, 76;
+    letter-spacing: 0.04em;
+
+    color: #fcfcfc;
   }
 }
 .box-text--hidden {
