@@ -208,6 +208,11 @@
     font-size: 14px;
     line-height: calc(17 / 14);
     color: $main-black;
+    &:hover,
+    &:focus {
+      background-color: #0a8817;
+      color: $main-white;
+    }
   }
 }
 
