@@ -1,1 +1,172 @@
-<h1>HELLO</h1>
+<section class="gallery">
+  <div class="container container__gallery">
+    <h2 class="visually-hidden">Gallery</h2>
+    <div class="gallery__wrap">
+      <div class="swiper gallerySwiper">
+        <ul class="swiper-wrapper">
+          <li class="gallery__item swiper-slide">
+            <picture>
+              <source
+                media="(min-width: 1200px)"
+                srcset="
+                  ./images/galery/galery-desk.jpg    1x,
+                  ./images/galery/galery-desk-2x.jpg 2x
+                "
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="
+                  ./images/galery/galery-desk.jpg    1x,
+                  ./images/galery/galery-desk-2x.jpg 2x
+                "
+              />
+              <source
+                media="(max-width: 767px)"
+                srcset="
+                  ./images/galery/galery-desk.jpg    1x,
+                  ./images/galery/galery-desk-2x.jpg 2x
+                "
+              />
+              <img
+                class="gallery__photo"
+                src="./images/galery/galery-desk.jpg"
+                alt="icecream"
+                width="1013"
+                height="422"
+              />
+            </picture>
+          </li>
+          <li class="gallery__item swiper-slide">
+            <picture>
+              <source
+                media="(min-width: 1200px)"
+                srcset="
+                  ./images/galery/galery2-desk.jpg    1x,
+                  ./images/galery/galery2-desk-2x.jpg 2x
+                "
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="./images/galery/galery2-desk.jpg 1x"
+              />
+              <source
+                media="(max-width: 767px)"
+                srcset="./images/galery/galery2-desk-2x.jpg 2x"
+              />
+              <img
+                class="gallery__photo"
+                src="./images/galery/galery2-desk.jpg"
+                alt="icecream"
+                width="1013"
+                height="422"
+              />
+            </picture>
+          </li>
+          <li class="gallery__item swiper-slide">
+            <picture>
+              <source
+                media="(min-width: 1200px)"
+                srcset="
+                  ./images/galery/galery3-desk.jpg    1x,
+                  ./images/galery/galery3-desk-2x.jpg 2x
+                "
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="./images/galery/galery3-desk.jpg 1x"
+              />
+              <source
+                media="(max-width: 767px)"
+                srcset="./images/galery/galery3-desk-2x.jpg 2x"
+              />
+              <img
+                class="gallery__photo"
+                src="./images/galery/galery3-desk.jpg"
+                alt="icecream"
+                width="1013"
+                height="422"
+              />
+            </picture>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-------------------- review ----------------->
+  <div class="container container__reviews">
+    <div class="swiper review-Swiper">
+      <ul class="swiper-wrapper">
+        <li class="reviews__item swiper-slide link">
+          <picture class="reviews__photo">
+            <source
+              media="(min-width: 320px)"
+              srcset="./images/review/reviews.png x1,
+        ./images/review/reviews-2x.png x2"
+            />
+            <img
+              src="./images/review/reviews.png"
+              alt="User's photo"
+              width="85"
+              height="85"
+            />
+          </picture>
+          <div class="reviews__wrap">
+            <p class="reviews__text">
+              I love visiting your cafe. You prepare the most delicious ice
+              cream in Los Angeles! In addition, you have beautiful serving,
+              cozy atmosphere and polite staff.
+            </p>
+          </div>
+          <p class="reviews__info">Emily, Los Angeles</p>
+        </li>
+        <li class="reviews__item swiper-slide link">
+          <picture class="reviews__photo">
+            <source
+              media="(min-width: 320px)"
+              srcset="./images/review/reviews2.png x1,
+        ./images/review/reviews2-2x.png x2"
+            />
+            <img
+              src="./images/review/reviews2.png"
+              alt="User's photo"
+              width="85"
+              height="85"
+            />
+          </picture>
+          <div class="reviews__wrap">
+            <p class="reviews__text">
+              Every day we come to you with friends after classes in college. We
+              love your ice cream and casual atmosphere!
+            </p>
+          </div>
+          <p class="reviews__info">Bryan, New-York</p>
+        </li>
+        <li class="reviews__item swiper-slide link">
+          <picture class="reviews__photo">
+            <source
+              media="(min-width: 320px)"
+              srcset="./images/review/reviews3.png x1,
+        ./images/review/reviews3-2x.png x2"
+            />
+            <img
+              src="./images/review/reviews3.png"
+              alt="User's photo"
+              width="85"
+              height="85"
+            />
+          </picture>
+          <div class="reviews__wrap">
+            <p class="reviews__text">
+              Ice cream is my passion! I love your chocolate hazelnut ice cream!
+              And I really like the excellent service - always served politely
+              and quickly!
+            </p>
+          </div>
+          <p class="reviews__info">Diana, Chicago</p>
+        </li>
+      </ul>
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,77 @@
+.container__reviews {
+  margin-top: 80px;
+}
+
+.reviews__photo {
+  display: block;
+  margin: 0 auto;
+  width: 85px;
+  height: 85px;
+}
+
+.reviews__wrap {
+  margin: 32px;
+  padding: 35px 39px;
+  background-color: $bcg-color;
+  border-radius: 10px;
+  padding-bottom: 32px;
+  @include desktop {
+    margin: 32px auto;
+    padding: 44px 73px;
+    width: 968px;
+  }
+}
+
+.reviews__text {
+  font-size: 12px;
+  line-height: 2.55;
+  text-align: center;
+  @include tablet {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.86;
+    letter-spacing: 0.04em;
+  }
+  @include desktop {
+    font-size: 16px;
+  }
+}
+
+.reviews__info {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 186%;
+  text-align: center;
+  color: $main-black;
+  margin-bottom: 12px;
+
+  @include tablet {
+    font-size: 16px;
+    line-height: 1.86;
+    margin-bottom: 32px;
+  }
+}
+
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: #d9d9d9;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: $bcg-color;
+}
+
+.swiper-pagination {
+  position: static;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  bottom: -10px;
+  left: 0;
+  width: 100%;
+}
