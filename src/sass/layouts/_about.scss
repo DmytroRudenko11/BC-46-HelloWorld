@@ -1,0 +1,318 @@
+.about {
+  padding-top: 60px;
+
+  @include tablet {
+    padding-bottom: 82px;
+  }
+
+  @include desktop {
+    padding-bottom: 92px;
+  }
+}
+.about-pretitle {
+  margin-bottom: 12px;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.22;
+  text-align: center;
+  text-transform: uppercase;
+
+  @include tablet {
+    font-weight: 800;
+    font-size: 22px;
+    line-height: calc(27 / 22);
+    letter-spacing: 0.04em;
+  }
+
+  @include desktop {
+    font-size: 30px;
+    line-height: calc(37 / 22);
+  }
+}
+
+.title-about {
+  margin-bottom: 32px;
+
+  font-family: 'Seymour One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 1.26;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  @media (max-width: 767px) {
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @include tablet {
+    width: 100%;
+    margin-bottom: 72px;
+    font-size: 34px;
+    line-height: calc(43 / 34);
+    letter-spacing: 0.06em;
+  }
+
+  @include desktop {
+    font-size: 36px;
+    line-height: calc(45 / 36);
+  }
+}
+.about-wrap {
+  @include tablet {
+    display: flex;
+  }
+}
+
+.box-cow {
+  position: relative;
+  width: 279px;
+  height: 278px;
+  margin: 0 auto;
+  background: linear-gradient(
+      0deg,
+      rgba(248, 210, 78, 0.7),
+      rgba(248, 210, 78, 0.7)
+    ),
+    #d9d9d9;
+  box-shadow: 0px 4.48583px 16.8218px rgba(153, 114, 23, 0.25);
+  border-radius: 140px;
+  @include tablet {
+    width: 330px;
+    height: 330px;
+    border-radius: 165px;
+  }
+  @include desktop {
+    width: 490px;
+    height: 490px;
+    border-radius: 250px;
+  }
+}
+.cow-image {
+  position: absolute;
+  display: block;
+  top: 20px;
+  // width: 330px;
+  // height: 330px;
+
+  @include tablet {
+    position: static;
+    transform: translateY(26px);
+  }
+
+  @include desktop {
+    transform: translateY(32px);
+  }
+}
+
+.box-cow-container {
+  margin-top: 40px;
+  @include tablet {
+    margin-left: 38px;
+    margin-top: 0;
+  }
+  @include desktop {
+    margin-left: 109px;
+    padding-top: 90px;
+    padding-right: 105px;
+  }
+}
+
+.box-cow-item:not(:last-child) {
+  margin-bottom: 4px;
+}
+
+.box-cow-list {
+  margin-bottom: 10px;
+  @include tablet {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+}
+
+.box-text {
+  font-size: 12px;
+  line-height: 1.76;
+  text-align: center;
+  letter-spacing: 0.04em;
+  @include tablet {
+    text-align: left;
+  }
+  @include desktop {
+    font-size: 14px;
+    line-height: 1, 94;
+  }
+}
+
+.box__text-thick {
+  @include desktop {
+    font-size: 16px;
+    line-height: 1, 76;
+    letter-spacing: 0.04em;
+  }
+}
+
+.box-text--hidden {
+  @media (max-width: 767px) {
+    display: none;
+  }
+}
+
+.about-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  border: none;
+  margin: 0 auto;
+  border-radius: 10px;
+  width: 164px;
+  height: 42px;
+  fill: #000000;
+  background-color: #f8d24e;
+  color: #000000;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: calc(18 / 14);
+  letter-spacing: 0.06em;
+
+  &:hover {
+    background-color: #0a8817;
+  }
+
+  &:focus {
+    background-color: #0a8817;
+    color: $main-white;
+    fill: $main-white;
+  }
+
+  @include tablet {
+    margin: 0;
+    margin-top: 32px;
+  }
+  @include desktop {
+    margin-top: 52px;
+  }
+}
+
+.about-icon {
+  height: 12px;
+  width: 12px;
+}
+
+//<---------- advantages------>
+.advantages {
+  padding-top: 60px;
+  padding-bottom: 65px;
+  @include tablet {
+    padding-top: 0;
+    padding-bottom: 205px;
+  }
+  @include desktop {
+    padding-bottom: 180px;
+  }
+}
+.advantages-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 28px;
+
+  @include tablet {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.advantages-number {
+  display: block;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: calc(44 / 36);
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  @include tablet {
+    font-size: 48px;
+    line-height: calc(59 / 48);
+  }
+
+  @include desktop {
+    font-size: 58px;
+    line-height: calc(71 / 58);
+  }
+}
+
+.advantages-item {
+  display: flex;
+  min-width: 230px;
+  gap: 16px;
+
+  flex-direction: column;
+  align-items: center;
+
+  &::before {
+    content: '';
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: $main-yellow;
+    @include tablet {
+      margin-bottom: 32px;
+    }
+    @include desktop {
+      margin-bottom: 40px;
+    }
+  }
+
+  @include tablet {
+    gap: 0;
+  }
+}
+.cow.advantages-item::before {
+  background-image: url(../images/advantages/cow.png);
+  background-repeat: no-repeat;
+  background-size: 36px;
+  background-position: 50% 50%;
+}
+
+.weight.advantages-item::before {
+  background-image: url(../images/advantages/Group.png);
+  background-repeat: no-repeat;
+  background-size: 36px;
+  background-position: 50% 50%;
+}
+
+.icecream.advantages-item::before {
+  background-image: url(../images/advantages/icecream.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 50% 50%;
+}
+
+.advantages-text {
+  display: block;
+  width: 230px;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: calc(20 / 12);
+  @include tablet {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc(24 / 14);
+    width: 152px;
+  }
+  @include desktop {
+    font-size: 16px;
+    line-height: 1.76;
+    letter-spacing: 0.02em;
+    width: 300px;
+  }
+}
