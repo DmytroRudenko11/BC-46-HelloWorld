@@ -95,16 +95,26 @@
 
 .product__card.cream::after {
   background-image: url(../images/products/ice-cream-mob_tab.png);
-}
-
-@media (min-device-pixel-ratio: 2),
-  (-webkit-min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  .product__card.cream::after {
-    background-image: url(../images/products/cream2x.png);
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/modal-buy/ice-cream-modal-2x-min.png);
   }
 }
+
+// @include retina {
+//   .product__card.cream::after {
+//     background-image: url(../images/modal-buy/ice-cream-modal-2x-min.png);
+//   }
+// }
+// @media (min-device-pixel-ratio: 2),
+//   (-webkit-min-device-pixel-ratio: 2),
+//   (min-resolution: 192dpi),
+//   (min-resolution: 2dppx) {
+//   .product__card.cream::after {
+//     background-image: url(../images/modal-buy/ice-cream-modal-2x-min.png);
+//   }
+// }
 
 .product__card.coffee::after {
   background-image: url(../images/products/ice-coffee-mob_tab.png);
@@ -400,5 +410,14 @@
 
   .product__text {
     font-size: 16px;
+  }
+}
+
+.product__card.cream::after {
+  background-image: url(../images/products/ice-cream-mob_tab.png);
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/modal-buy/ice-cream-modal-2x-min.png);
   }
 }
