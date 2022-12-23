@@ -1,0 +1,173 @@
+
+.backdrop-map{
+  position: fixed;
+  top: 0;
+  left: 0;
+  visibility: visible;
+  opacity: 1;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 65px 15px;
+}
+
+.modal-map {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 300px;
+    height: 350px;
+    max-height: 458px;    
+    border-radius: 4px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 10px;
+    background: #FCFCFC;
+    border: 2px solid #F8D24E;
+    border-radius: 10px;
+
+}
+
+.modal-map__btn-close {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 24px;
+    height: 24px;
+    padding: 0;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FCFCFC;
+    border: none;
+    
+}
+.modal-map__btn-close:hover,
+.modal-map__btn-close:focus{
+    fill: #0A8817;
+}
+
+
+.modal-map__title {
+    padding-bottom: 32px;
+    font-family: 'Seymour One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: calc(28/20);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #131313;
+}
+
+.modal-map__map-div {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding-bottom: 32px;
+    border-radius: 10px;
+    
+}
+.modal-map__img{
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+}
+.modal-map__div-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 145px;
+    height: 42px;
+    
+}
+
+.modal-map__link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    background-color: #F8D24E;
+    border-radius: 10px;
+}
+
+.modal-map__link:hover,
+.modal-map__link:focus {
+  background-color: #0A8817;
+}
+
+
+.modal-map__link-text{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: calc(17/14);
+    color: #131313;
+}
+
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+@media screen and (max-width: 479px) {
+    .backdrop-map {
+        width: 100%;
+      }
+}
+
+@media screen and (min-width: 480px) {
+    .backdrop-map {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    
+    .modal-map {     
+      width: 440px;
+      height: 400px;
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .modal-map {
+      width: 650px;
+      height: 600px;
+    }
+
+    .modal-map__map-div {
+      width: 80%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+  .backdrop-map {
+    width: 100%;
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+
+
+}
+
+  
+
+  
+
+
+
+
